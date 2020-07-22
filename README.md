@@ -23,14 +23,23 @@ honours little endian / big endian coding of modbus values
 modbus2zabbix V0.1
 
 Usage:
+
         modbus2zabbix [[-t | -r] -R <num> -l <num> -i <num> -A <IP|Serial>] | -h]
+	
                 -t              ModBus via TCP
+		
                 -r              ModBus vis serial connection (RTU)
+		
                 -R <num>        Number of the ModBus Register
+		
                 -l <num>        length of the data; usual 1 or 2
+		
                 -i <num>        ID of the Modbus Device, usual between 1 and 255
+		
                 -A <IP|Serial>  targed IP for TCP (-t) or local serial device für RTU (-r)
+		
                 -h              this help
+		
 		-S		bit swap (little endian / big endian)
 
 
